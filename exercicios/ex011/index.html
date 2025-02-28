@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminue o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png"><!--source media type e bro deve ser acima-->
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>REPRODZINDO AUDIO</h1>
+    <p>vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="auto" autoplay controls loop><!--bro audio controls tambem nao esquece-->
+        <source src="midia/Pop Smoke - What You Know Bout Love (Lyrics).mp3" type="audio/mpeg"><!--cenas detalhadas source src-->
+        <source src="midia/Pop Smoke - What You Know Bout Love (Lyrics).ogg" type="audio/ogg">
+        <source src="midia/Pop Smoke - What You Know Bout Love (Lyrics).wav" type="audio/wav"><!--bro nao usa wav-->   <p>infelizmente seu navegador não cpnsegue reproduzir o audio. <a href="midia/Pop Smoke - What You Know Bout Love (Lyrics).mp3">faça o download do arquivo mp3</a></p>
+    </audio>
+
+</body>
+</html>
